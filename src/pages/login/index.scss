@@ -1,0 +1,9 @@
+:global {
+  #root {
+    display: flex;
+    height: 100vh;
+  }
+}
+.layout {
+  flex-grow: 1;
+}
