@@ -12,15 +12,8 @@ const defaultTooltipProps = {
   placement: "right",
 };
 
-function str2tooltip(
-  msg: String,
-  props: TooltipTypePropsWithOverlay = defaultTooltipProps
-) {
+function str2tooltip(msg: String, props: tooltipType = defaultTooltipProps) {
   return <Tooltip visible title={msg} {...props}></Tooltip>;
-}
-
-function fn(props: tooltipType = defaultTooltipProps) {
-  return <div {...props}>123</div>;
 }
 
 function tran(props: {
