@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'umi'
-import { Layout, Menu, Button } from 'antd'
+import React from "react";
+import { Link } from "umi";
+import { Layout, Menu, Button } from "antd";
 import {
   AppstoreOutlined,
   MenuUnfoldOutlined,
@@ -9,18 +9,18 @@ import {
   DesktopOutlined,
   ContainerOutlined,
   MailOutlined,
-} from '@ant-design/icons'
-const { Header, Footer, Sider, Content } = Layout
-const { SubMenu } = Menu
+} from "@ant-design/icons";
+const { Header, Footer, Sider, Content } = Layout;
+const { SubMenu } = Menu;
 const index = (props) => {
   return (
-    <Layout id="layout">
+    <Layout style={{ background: "none" }}>
       <Header>Header</Header>
       <Layout>
         <Sider>
           <Menu
-            defaultSelectedKeys={['/about']}
-            defaultOpenKeys={['sub1']}
+            defaultSelectedKeys={["/about"]}
+            defaultOpenKeys={["sub1"]}
             mode="inline"
             theme="dark"
           >
@@ -57,7 +57,7 @@ const index = (props) => {
       </Layout>
       <Footer>Footer</Footer>
     </Layout>
-  )
-}
+  );
+};
 
-export default index
+export default index;

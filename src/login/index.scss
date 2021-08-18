@@ -1,17 +1,17 @@
-:global {
-  #root {
-    display: flex;
-    height: 100vh;
+/*
+  跟业务相关的样式
+*/
+.loginpage {
+  background: url(~@/asserts/login/mainback.png) center;
+
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
   }
-  .ant-tooltip-open {
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top:  0;
-    bottom: 0;
-    left:  0;
+
+  .loginform {
+    padding: 0 20px;
+    background: url(~@/asserts/login/formbg.png) no-repeat center top ;
   }
+
 }
-.layout {
-  flex-grow: 1;
-}
+

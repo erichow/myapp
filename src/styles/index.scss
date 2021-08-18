@@ -1,0 +1,18 @@
+  #root {
+    display: flex;
+    height: 100vh;
+  }
+  .full {
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  .ant-layout-header,
+  .ant-layout-footer,
+  .ant-layout {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }

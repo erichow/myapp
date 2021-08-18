@@ -6,12 +6,14 @@ import {
   Button,
   Spin,
   Space,
-  Tabs,
   Tooltip,
   Input,
+  // Form,
+  // Tabs,
 } from "antd";
-import Form from "@/components/form";
-import styles from "./index.scss";
+import { Form, Tabs } from "@/components/index";
+import "./index.scss";
+import "@/styles/index.scss";
 
 const { Header, Footer, Sider, Content } = Layout;
 const { TabPane } = Tabs;
@@ -20,12 +22,10 @@ const index = (props) => {
   const [errorMsg, setErrorMsg] = React.useState("123");
   const [form] = Form.useForm();
   function callback(key) {
-    console.log(key);
-    debugger;
     form.setFieldsValue({ type: key });
   }
   return (
-    <Layout id="layout" className={styles.layout}>
+    <Layout className="full loginpage">
       <Header>Header</Header>
       <Layout>
         <Content>
@@ -52,15 +52,13 @@ const index = (props) => {
                 span={12}
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                <div style={{ border: "1px solid red", padding: "0 20px" }}>
+                <div style={{ padding: "0 20px" }} className={"loginform"}>
                   <Tabs defaultActiveKey="0" onChange={callback}>
                     <TabPane tab="EVI用户" key="0">
                       <Form
                         form={form}
-                        name="basic"
-                        labelCol={{ span: 8 }}
-                        wrapperCol={{ span: 16 }}
-                        style={{ width: "300px" }}
+                        layout="vertical"
+                        style={{ width: "250px" }}
                         initialValues={{ type: 0 }}
                         onFinish={console.log}
                         // onFinishFailed={onFinishFailed}
@@ -94,7 +92,7 @@ const index = (props) => {
                             >
                               <Input
                                 style={{
-                                  width: "70px",
+                                  width: "160px",
                                   display: "inline-block",
                                 }}
                               />
@@ -102,10 +100,9 @@ const index = (props) => {
                             <Spin spinning={false}>
                               <img
                                 alt="验证码"
-                                src=""
+                                src="https://evidev.sanyevi.cn/api/generateCaptcha"
                                 style={{
-                                  width: "70px",
-                                  border: "1px solid red",
+                                  width: "82px",
                                   display: "inline-block",
                                 }}
                               />
@@ -113,11 +110,11 @@ const index = (props) => {
                           </Space>
                         </Form.Item>
 
-                        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                        <div className="center">
                           <Button type="primary" htmlType="submit">
                             登入
                           </Button>
-                        </Form.Item>
+                        </div>
 
                         <div
                           style={{
@@ -132,11 +129,9 @@ const index = (props) => {
                     </TabPane>
                     <TabPane tab="域用户" key="1">
                       <Form
-                        name="basic"
-                        labelCol={{ span: 8 }}
-                        wrapperCol={{ span: 16 }}
+                        layout="vertical"
                         style={{
-                          width: "300px",
+                          width: "250px",
                         }}
                         // onFinish={onFinish}
                         // onFinishFailed={onFinishFailed}
@@ -210,12 +205,11 @@ const index = (props) => {
                           </Space>
                         </Form.Item>
 
-                        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                        <div className="center">
                           <Button type="primary" htmlType="submit">
                             登入
                           </Button>
-                        </Form.Item>
-
+                        </div>
                         <div
                           style={{
                             display: "flex",
