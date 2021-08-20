@@ -11,11 +11,11 @@ export default defineConfig({
     },
     {
       path: "/login",
-      component: "@/login",
+      component: "./login",
     },
     {
       path: "/",
-      component: "@/layout",
+      component: "@/framework",
       routes: [
         {
           path: "/",
