@@ -1,0 +1,13 @@
+.hx-layout-header {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hx-layout-footer,
+.hx-layout-content{
+	color: rgba(255, 255, 255, 0.8);
+	background-color: transparent;
+}
+.hx-layout {
+	background: url(~@/asserts/login/mainback.png) center;
+}
