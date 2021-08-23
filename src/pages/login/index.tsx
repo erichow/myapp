@@ -19,7 +19,7 @@ import "./index.scss";
 const { Header, Footer, Sider, Content } = Layout;
 const { TabPane } = Tabs;
 
-const index = (props) => {
+const index = (props: any) => {
   const [form] = Form.useForm();
   function callback(key) {
     form.setFieldsValue({ type: key });
@@ -81,11 +81,15 @@ const index = (props) => {
                                   </Spin>
                                 </Space>
                               </Form.Item>,
-                              <div className="center">
-                                <Button type="primary" htmlType="submit">
-                                  登入
+                              <Form.Item style={{ paddingTop: 0 }}>
+                                <Button
+                                  type="primary"
+                                  style={{ flexGrow: 1 }}
+                                  htmlType="submit"
+                                >
+                                  登 入
                                 </Button>
-                              </div>,
+                              </Form.Item>,
                               <div className="right">
                                 <Button type="link">忘记密码</Button>
                               </div>,

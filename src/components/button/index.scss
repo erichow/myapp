@@ -1,3 +1,23 @@
 .hx-button {
-	border: 1px solid yellow;
+  display: flex;
+  overflow: hidden;
+  height: 34px;
+  // flex-grow: 1;
+  > div {
+    margin: 1px;
+    outline: 1px solid yellow;
+    overflow: hidden;
+    flex-grow: 1;
+    transform: rotate(45deg);
+    > div {
+      flex-grow: 1;
+      outline: 1px solid yellow;
+      transform: rotate(-45deg);
+      min-width: 80px;
+      button {
+        flex-grow: 1;
+        border: 0;
+      }
+    }
+  }
 }

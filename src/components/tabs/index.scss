@@ -1,5 +1,8 @@
 .hx-tabs {
-  color:  rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  > .ant-tabs-nav {
+    margin-bottom: 12px;
+  }
   > .ant-tabs-nav::before {
     border-bottom: 1px solid transparent;
   }
