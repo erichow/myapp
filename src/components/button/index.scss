@@ -2,16 +2,15 @@
   display: flex;
   overflow: hidden;
   height: 34px;
-  // flex-grow: 1;
   > div {
     margin: 1px;
-    outline: 1px solid yellow;
+    outline: 1px solid #1890ff;
     overflow: hidden;
     flex-grow: 1;
     transform: rotate(45deg);
     > div {
       flex-grow: 1;
-      outline: 1px solid yellow;
+      outline: 1px solid #1890ff;
       transform: rotate(-45deg);
       min-width: 80px;
       button {
@@ -20,4 +19,8 @@
       }
     }
   }
+}
+
+.hx-button[type='link'] * {
+  outline: 0;
 }

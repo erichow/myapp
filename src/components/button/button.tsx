@@ -12,7 +12,7 @@ function Button(props: any) {
   const btnRef = React.useRef(null);
 
   return (
-    <div className="hx-button center" style={props.style}>
+    <div className="hx-button center noborder" {...props}>
       <div ref={btnRef} className="center">
         <div className="center">
           <antd.Button {...props}>{props.children}</antd.Button>
