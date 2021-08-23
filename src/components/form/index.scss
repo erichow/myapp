@@ -9,7 +9,7 @@
     position: absolute;
     top: 0;
     pointer-events: none;
-    z-index: 1!important;
+    z-index: 1 !important;
   }
 
   .ant-form-item-label > label {
@@ -20,18 +20,18 @@
     color: rgba(255, 255, 255, 0.8);
     background: none;
   }
-  
+
   /* css样式不优雅 */
   .ant-form-item-explain {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     height: 32px;
     pointer-events: none;
     .ant-tooltip-open {
       position: absolute;
-      top:0;
+      top: 0;
       left: 0;
       right: 0;
       bottom: 0;
