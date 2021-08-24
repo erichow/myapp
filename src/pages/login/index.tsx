@@ -84,6 +84,7 @@ const index = (props: any) => {
                               <Form.Item style={{ paddingTop: 0 }}>
                                 <Button
                                   type="primary"
+                                  ghost
                                   style={{ flexGrow: 1 }}
                                   htmlType="submit"
                                 >
