@@ -1,5 +1,4 @@
-import { Input } from "antd";
-import { Layout, Form, Tabs } from "@/components/index";
+import { Input, Layout, Form, Tabs } from "@/components";
 
 function tranItem(props: any) {
   function tran(props: any) {

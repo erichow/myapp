@@ -7,13 +7,13 @@ import {
   Spin,
   Space,
   Tooltip,
-  Input,
+  // Input,
   // Button,
   // Layout,
   // Form,
   // Tabs,
 } from "antd";
-import { Button, Layout, Form, Tabs } from "@/components/index";
+import { Input, Button, Layout, Form, Tabs } from "@/components/index";
 import "./index.scss";
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -82,7 +82,7 @@ const index = (props: any) => {
                                 </Space>
                               </Form.Item>,
                               <Form.Item style={{ paddingTop: 0 }}>
-                                <Button type="primary" htmlType="submit">
+                                <Button type="primary" ghost htmlType="submit">
                                   登 入
                                 </Button>
                               </Form.Item>,
