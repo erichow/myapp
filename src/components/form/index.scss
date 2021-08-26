@@ -6,8 +6,9 @@
   margin-bottom: 12px;
   position: relative;
   .ant-form-item-label {
-    position: absolute;
     top: 0;
+    left: 10px;
+    position: absolute;
     pointer-events: none;
     z-index: 1 !important;
   }

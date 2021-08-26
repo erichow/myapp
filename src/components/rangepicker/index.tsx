@@ -16,7 +16,7 @@ function RangePicker(props: any) {
   }
 
   return (
-    <Border>
+    <Border corner={0}>
       <DatePicker
         ref={startRef}
         className="hx-picker"
