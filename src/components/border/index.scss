@@ -1,0 +1,49 @@
+.hx-border {
+  display: flex;
+  overflow: hidden;
+  height: 34px;
+  > div,
+  > div > div {
+    flex-grow: 1;
+    transition: all .3s;
+    min-width: 80px;
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  > div {
+    margin: 1px;
+    overflow: hidden;
+    transform: rotate(45deg);
+  }
+  > div > div {
+    transform: rotate(-45deg);
+  }
+}
+
+.hx-border:hover {
+  > div > div,
+  > div {
+    outline: 1px solid #1890ff;
+  }
+}
+
+.hx-border[type=link] * {
+  outline: 0;
+}
+
+.hx-border[type=primary] {
+  > div {
+    outline: 1px solid #1890ff;
+    > div {
+      outline: 1px solid #1890ff;
+    }
+  }
+}
+
+.hx-border[type=danger] {
+  > div {
+    outline: 1px solid rgba(255, 77, 79, 1);
+    > div {
+      outline: 1px solid rgba(255, 77, 79, 1);
+    }
+  }
+}

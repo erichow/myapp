@@ -1,24 +1,14 @@
 import React from "react";
 import antd from "antd";
+import Border from "../border";
 
 function Button(props: any) {
-  React.useEffect(() => {
-    const h = btnRef.current.offsetHeight;
-    const w = btnRef.current.offsetWidth;
-    // 切角高度
-    btnRef.current.style.height = (w + h) / Math.sqrt(2) - 14 + "px";
-  }, []);
-
-  const btnRef = React.useRef(null);
-
   return (
-    <div className="hx-button center noborder" {...props}>
-      <div ref={btnRef} className="center">
-        <div className="center">
-          <antd.Button {...props}>{props.children}</antd.Button>
-        </div>
-      </div>
-    </div>
+    <Border {...props} className={` ${props.className || ""}`}>
+      <antd.Button {...props} className="hx-button">
+        {props.children}
+      </antd.Button>
+    </Border>
   );
 }
 

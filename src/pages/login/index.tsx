@@ -82,12 +82,7 @@ const index = (props: any) => {
                                 </Space>
                               </Form.Item>,
                               <Form.Item style={{ paddingTop: 0 }}>
-                                <Button
-                                  type="primary"
-                                  ghost
-                                  style={{ flexGrow: 1 }}
-                                  htmlType="submit"
-                                >
+                                <Button type="primary" htmlType="submit">
                                   登 入
                                 </Button>
                               </Form.Item>,

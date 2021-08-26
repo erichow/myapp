@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "umi";
-import { Layout, Menu, Button } from "antd";
+import { Menu, Button } from "antd";
+import { Layout } from "@/components";
 import {
   AppstoreOutlined,
   MenuUnfoldOutlined,
@@ -12,9 +13,9 @@ import {
 } from "@ant-design/icons";
 const { Header, Footer, Sider, Content } = Layout;
 const { SubMenu } = Menu;
-const index = (props) => {
+const index = (props: any) => {
   return (
-    <Layout>
+    <Layout style={{ background: "#030b21" }}>
       <Header>Header</Header>
       <Layout>
         <Sider>

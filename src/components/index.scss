@@ -3,6 +3,7 @@
   height: 100vh;
 }
 
+
 .full {
   flex-grow: 1;
   flex-direction: column;
@@ -22,4 +23,20 @@
 .left {
   display: flex;
   justify-content: flex-start;
+}
+
+
+.ant-picker-panel-container {
+  background: none!important;
+  border: 1px solid gray;
+  .ant-picker-header {
+    border-bottom: 1px solid gray;
+  }
+}
+.ant-picker-panel .ant-picker-footer {
+  border-bottom: 1px solid gray;
+}
+
+.ant-form-inline {
+  align-items: baseline;
 }

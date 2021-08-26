@@ -10,4 +10,10 @@
 }
 .hx-layout {
   background: url(~@/asserts/login/mainback.png) center;
+  .hx-layout {
+    background: none;
+  }
+  * {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
