@@ -89,7 +89,7 @@ const index = (props: any) => {
                               <div className="right">
                                 <Button type="link">忘记密码</Button>
                               </div>,
-                              <p className="center">三一集团华兴数字</p>,
+                              <p className="center">XXXX集团XXXXX数字</p>,
                             ],
                           },
                         ],
@@ -181,7 +181,7 @@ const index = (props: any) => {
                         <div className="right">
                           <Button type="link">忘记密码</Button>
                         </div>
-                        <p className="center">三一集团华兴数字</p>
+                        <p className="center">XXXX集团XXXXX数字</p>
                       </Form>
                     </TabPane>
                   </Tabs>
@@ -192,7 +192,7 @@ const index = (props: any) => {
         </Content>
       </Layout>
       <Footer className="center">
-        易维讯系统ICP备案号：沪ICP备15026710号-3
+        XXXXXX系统ICP备案号：沪ICP备15021100号-3
       </Footer>
     </Layout>
   );
