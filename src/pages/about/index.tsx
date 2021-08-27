@@ -2,7 +2,7 @@ import styles from "./index.scss";
 import React from "react";
 import moment from "moment";
 import { SwapRightOutlined } from "@ant-design/icons";
-import { Form, Button, RangePicker, DatePicker } from "@/components";
+import { Form, Button, RangePicker, DatePicker, Input } from "@/components";
 
 export default function IndexPage() {
   return (
@@ -13,11 +13,12 @@ export default function IndexPage() {
         initialValues={{
           aa: [moment(), moment().add(1, "days")],
           bb: moment(),
+          cc: "1234",
         }}
       >
         <Form.Item
           name="aa"
-          label="日期"
+          label="日期范围"
           rules={[{ required: true, message: "必填" }]}
         >
           <RangePicker />
@@ -28,6 +29,13 @@ export default function IndexPage() {
           rules={[{ required: true, message: "必填" }]}
         >
           <DatePicker />
+        </Form.Item>
+        <Form.Item
+          name="cc"
+          label="输入框"
+          rules={[{ required: true, message: "必填" }]}
+        >
+          <Input />
         </Form.Item>
         <Form.Item>
           <Button type="primary" ghost htmlType="submit">
