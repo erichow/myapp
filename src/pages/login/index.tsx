@@ -1,18 +1,7 @@
 import _ from "lodash";
 import { tranItem, tranForm } from "@/components/tool";
 import React from "react";
-import {
-  Row,
-  Col,
-  Spin,
-  Space,
-  Tooltip,
-  // Input,
-  // Button,
-  // Layout,
-  // Form,
-  // Tabs,
-} from "antd";
+import { Row, Col, Spin, Space, Tooltip } from "antd";
 import { Input, Button, Layout, Form, Tabs } from "@/components/index";
 import "./index.scss";
 
@@ -96,14 +85,7 @@ const index = (props: any) => {
                       })}
                     </TabPane>
                     <TabPane tab="域用户" key="1">
-                      <Form
-                        layout="vertical"
-                        style={{
-                          width: "250px",
-                        }}
-                        // onFinish={onFinish}
-                        // onFinishFailed={onFinishFailed}
-                      >
+                      <Form layout="vertical" style={{ width: "250px" }}>
                         <Form.Item hidden label="type" name="type">
                           <Input />
                         </Form.Item>
