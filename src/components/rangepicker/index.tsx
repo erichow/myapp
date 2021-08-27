@@ -33,6 +33,7 @@ function RangePicker(props: any) {
         bordered={false}
         onChange={handleEnd}
         allowClear={false}
+        style={{ marginLeft: "-11px" }}
       />
     </Border>
   );

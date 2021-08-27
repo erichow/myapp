@@ -1,5 +1,35 @@
 .hx-picker {
+	.ant-picker-suffix,
 	input {
 		color: rgba(255, 255, 255, 0.8);
+	}
+	.ant-picker-input > input {
+		width: 80px;
+	}
+}
+
+/*想加一个自己的className，但不知道怎么加, 暂时先覆盖antd样式*/
+.ant-picker-dropdown {
+	.ant-picker-cell.ant-picker-cell-in-view,
+	.ant-picker-content th,
+	.ant-picker-header button,
+	.ant-picker-header {
+		color: rgba(255, 255, 255, 0.8);
+	}
+	.ant-picker-footer {
+		border-top-color: #33383a;
+	}
+	.ant-picker-header {
+		border-bottom-color: #33383a;
+	}
+	.ant-picker-cell {
+		color: rgba(255, 255, 255, 0.4);
+	}
+	.ant-picker-panel {
+		border: 1px solid transparent;
+	}
+	.ant-picker-panel-container {
+		background: none;
+		border: 1px solid #33383a;
 	}
 }

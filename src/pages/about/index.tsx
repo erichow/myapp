@@ -10,12 +10,23 @@ export default function IndexPage() {
       <Form
         onFinish={console.log}
         layout="inline"
-        initialValues={{ aa: [moment(), moment().add(1, "days")] }}
+        initialValues={{
+          aa: [moment(), moment().add(1, "days")],
+          bb: moment(),
+        }}
       >
-        <Form.Item name="aa" label="日期">
+        <Form.Item
+          name="aa"
+          label="日期"
+          rules={[{ required: true, message: "必填" }]}
+        >
           <RangePicker />
         </Form.Item>
-        <Form.Item name="bb" label="日期">
+        <Form.Item
+          name="bb"
+          label="日期"
+          rules={[{ required: true, message: "必填" }]}
+        >
           <DatePicker />
         </Form.Item>
         <Form.Item>

@@ -45,7 +45,7 @@ const index = (props: any) => {
               <Col span={12} className="center">
                 <div className="loginform">
                   <Tabs defaultActiveKey="0" onChange={callback}>
-                    <TabPane tab="EVI用户" key="0">
+                    <TabPane tab="XXX用户" key="0">
                       {tranForm({
                         props: {
                           form: form,
@@ -76,7 +76,7 @@ const index = (props: any) => {
                                     <img
                                       alt="验证码"
                                       style={{ width: "82px" }}
-                                      src="https://evidev.sanyevi.cn/api/generateCaptcha"
+                                      src=""
                                     />
                                   </Spin>
                                 </Space>
