@@ -7,7 +7,6 @@ import { Form, Button, RangePicker, DatePicker } from "@/components";
 export default function IndexPage() {
   return (
     <div>
-      <h1 className={styles.title}>关于我们</h1>
       <Form
         onFinish={console.log}
         layout="inline"
@@ -19,9 +18,11 @@ export default function IndexPage() {
         <Form.Item name="bb" label="日期">
           <DatePicker />
         </Form.Item>
-        <Button type="primary" ghost htmlType="submit">
-          提交
-        </Button>
+        <Form.Item>
+          <Button type="primary" ghost htmlType="submit">
+            提交
+          </Button>
+        </Form.Item>
       </Form>
     </div>
   );

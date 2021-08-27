@@ -8,7 +8,7 @@
     flex-grow: 1;
     transition: all .3s;
     min-width: 80px;
-    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline: 1px solid #33383a;
   }
   > div {
     margin: 1px;
@@ -45,7 +45,7 @@
 .hx-border-dashed {
   > div,
   > div > div {
-    outline: 1px dashed rgba(255, 255, 255, 0.5);
+    outline: 1px dashed #33383a;
   }
 }
 

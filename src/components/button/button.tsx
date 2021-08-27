@@ -9,14 +9,16 @@ function Button(props: any) {
     props.className
   );
   return (
-    <Border type={props.type}>
-      <antd.Button
-        style={{ flexGrow: 1, border: 0, borderRadius: 0 }}
-        {...props}
-      >
-        {props.children}
-      </antd.Button>
-    </Border>
+    <div className={className}>
+      <Border type={props.type}>
+        <antd.Button
+          {...props}
+          style={{ flexGrow: 1, border: 0, borderRadius: 0 }}
+        >
+          {props.children}
+        </antd.Button>
+      </Border>
+    </div>
   );
 }
 
