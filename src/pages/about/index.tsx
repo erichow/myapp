@@ -11,14 +11,15 @@ export default function IndexPage() {
         onFinish={console.log}
         layout="inline"
         initialValues={{
-          aa: [moment(), moment().add(1, "days")],
+          aa: [moment().subtract(3, "months"), moment()],
           bb: moment(),
-          cc: "1234",
+          cc: "test",
         }}
       >
         <Form.Item
           name="aa"
           label="日期范围"
+          desc="日期范围三个月"
           rules={[{ required: true, message: "必填" }]}
         >
           <RangePicker />

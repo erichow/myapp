@@ -14,7 +14,12 @@ function DatePicker(props: any) {
   return (
     <div className={className}>
       <Border corner={0}>
-        <antd.DatePicker {...props} bordered={false} allowClear={false} />
+        <antd.DatePicker
+          {...props}
+          bordered={false}
+          allowClear={false}
+          inputReadOnly={true}
+        />
       </Border>
     </div>
   );

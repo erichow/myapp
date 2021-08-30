@@ -1,17 +1,26 @@
 import React from "react";
 import Border from "@/components/border";
-import { DatePicker } from "antd";
-import { SwapRightOutlined } from "@ant-design/icons";
+import classNames from "classnames";
+import { DatePicker, Tooltip } from "antd";
+import {
+  SwapRightOutlined,
+  ExclamationCircleOutlined,
+} from "@ant-design/icons";
 
 function RangePicker(props: any) {
   const startRef = React.useRef(null);
   const endRef = React.useRef(null);
+  const className = classNames(
+    "hx-picker",
+    { [`hx-picker-${props.type}`]: props.type },
+    props.className
+  );
 
-  function handleStart(mdate: Object, sdate: String) {
+  function handleStart(mdate: Object, sdate: String): void {
     props.onChange([mdate, endRef.current.props.value]);
   }
 
-  function handleEnd(mdate: Object, sdate: String) {
+  function handleEnd(mdate: Object, sdate: String): void {
     props.onChange([startRef.current.props.value, mdate]);
   }
 
@@ -19,19 +28,21 @@ function RangePicker(props: any) {
     <Border corner={0}>
       <DatePicker
         ref={startRef}
-        className="hx-picker"
         value={props.value[0]}
-        bordered={false}
         onChange={handleStart}
+        className={className}
+        bordered={false}
+        inputReadOnly={true}
         suffixIcon={<SwapRightOutlined />}
         allowClear={false}
       />
       <DatePicker
         ref={endRef}
-        className="hx-picker"
         value={props.value[1]}
-        bordered={false}
         onChange={handleEnd}
+        className={className}
+        bordered={false}
+        inputReadOnly={true}
         allowClear={false}
         style={{ marginLeft: "-11px" }}
       />
